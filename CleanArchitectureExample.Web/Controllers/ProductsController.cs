@@ -9,24 +9,25 @@ namespace CleanArchitectureExample.Web.Controllers;
 [Route("api/[controller]")]
 public class ProductsController : ControllerBase
 {
-    private readonly IProductRepository _productRepository;
+    private readonly IProductListUseCase _productListUseCase;
 
-    public ProductsController(IProductRepository productRepository)
+    public ProductsController(IProductListUseCase productListUseCase)
     {
-        _productRepository = productRepository;
+        _productListUseCase = productListUseCase;
     }
 
     [HttpGet]
     public async Task<IActionResult> Get()
     {
-        var products = await _productRepository.GetProductsAsync();
+        var products = await _productListUseCase.ExecuteAsync();
         return Ok(products);
     }
+
 
     [HttpGet("{id}")]
     public async Task<IActionResult> GetById(int id)
     {
-        var product = await _productRepository.GetProductByIdAsync(id);
+        var product = await _productListUseCase.GetProductByIdAsync(id);
         if (product == null) {
             return NotFound();
         }
