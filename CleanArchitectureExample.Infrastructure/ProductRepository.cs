@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-using CleanArchitectureExample.Application;
+using CleanArchitectureExample.Application.Interfaces;
 using CleanArchitectureExample.Domain;
 
 namespace CleanArchitectureExample.Infrastructure;
@@ -26,5 +25,10 @@ public class ProductRepository : IProductRepository
     public async Task<Product> GetProductByIdAsync(int id)
     {
         return await Task.FromResult(_products.FirstOrDefault(p => p.Id == id));
+    }
+    public async Task AddProductAsync(Product product)
+    {
+        _products.Add(product);
+        await Task.CompletedTask;
     }
 }

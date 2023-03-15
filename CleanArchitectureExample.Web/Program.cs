@@ -1,4 +1,5 @@
 using CleanArchitectureExample.Application;
+using CleanArchitectureExample.Application.Interfaces;
 using CleanArchitectureExample.Infrastructure;
 using CleanArchitectureExample.Web;
 
@@ -12,7 +13,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
-builder.Services.AddScoped<IProductListUseCase, ProductListUseCase>();
+builder.Services.AddScoped<IProductUseCase, ProductUseCase>();
 
 var app = builder.Build();
 
