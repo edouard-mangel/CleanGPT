@@ -1,23 +1,24 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33103.201
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureExample.Web", "CleanArchitectureExample.Web\CleanArchitectureExample.Web.csproj", "{80FF8CB1-3ED1-4374-890D-77EE2284BF1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitectureExample.Web", "CleanArchitectureExample.Web\CleanArchitectureExample.Web.csproj", "{80FF8CB1-3ED1-4374-890D-77EE2284BF1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureExample.Application", "CleanArchitectureExample.Application\CleanArchitectureExample.Application.csproj", "{11869634-E3FB-4AD0-B87A-302AE5CF62C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitectureExample.Application", "CleanArchitectureExample.Application\CleanArchitectureExample.Application.csproj", "{11869634-E3FB-4AD0-B87A-302AE5CF62C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureExample.Domain", "CleanArchitectureExample.Domain\CleanArchitectureExample.Domain.csproj", "{F9A86047-1348-49AB-A7A5-C969B549DD99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitectureExample.Domain", "CleanArchitectureExample.Domain\CleanArchitectureExample.Domain.csproj", "{F9A86047-1348-49AB-A7A5-C969B549DD99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureExample.Infrastructure", "CleanArchitectureExample.Infrastructure\CleanArchitectureExample.Infrastructure.csproj", "{5CBEB03D-9A27-4B38-B7CC-8A8F7D691DA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitectureExample.Infrastructure", "CleanArchitectureExample.Infrastructure\CleanArchitectureExample.Infrastructure.csproj", "{5CBEB03D-9A27-4B38-B7CC-8A8F7D691DA3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B77A2F86-EFEF-4C96-8321-0E9BF91BAF44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.UnitTests", "CleanArchitecture.UnitTests\CleanArchitecture.UnitTests.csproj", "{4F20CD77-9A14-4710-B28A-9D8AA9DAC992}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{80FF8CB1-3ED1-4374-890D-77EE2284BF1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -36,5 +37,15 @@ Global
 		{5CBEB03D-9A27-4B38-B7CC-8A8F7D691DA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CBEB03D-9A27-4B38-B7CC-8A8F7D691DA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CBEB03D-9A27-4B38-B7CC-8A8F7D691DA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F20CD77-9A14-4710-B28A-9D8AA9DAC992}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F20CD77-9A14-4710-B28A-9D8AA9DAC992}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F20CD77-9A14-4710-B28A-9D8AA9DAC992}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F20CD77-9A14-4710-B28A-9D8AA9DAC992}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4F20CD77-9A14-4710-B28A-9D8AA9DAC992} = {B77A2F86-EFEF-4C96-8321-0E9BF91BAF44}
 	EndGlobalSection
 EndGlobal
